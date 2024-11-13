@@ -1,0 +1,234 @@
+/* Reset and General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F4F6FF;
+}
+
+/* Header and Navbar Styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(240, 73, 73);
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+}
+
+.nav-link {
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+}
+
+/* Mini Navbar */
+.mini-navbar {
+  display: flex;
+  justify-content: center;
+  margin-top: 130px; /* Adjusted for fixed header space */
+}
+
+.mini-navlink {
+  font-size: 18px;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background-color: #333;
+  width: 80%;
+  margin: 10px auto;
+}
+
+/* Fullscreen Background Container */
+.container {
+  position: relative;
+  background-image: url('song of ice and fire.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 50px;
+  color: white;
+  background-color: rgb(165, 84, 64);
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+}
+
+.text-overlay h3 {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.text-overlay h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+/* Button Styling */
+.shop-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.shop-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Video Container */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Footer Form Styling */
+.footer1 {
+  margin-top: 20px;
+  padding: 30px;
+  background-color: rgb(240, 73, 73);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  width:100%
+}
+
+.footer form {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.footer label {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.text, .email {
+  background-color: rgb(209, 209, 209);
+  border: 1px solid black;
+  padding: 10px;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.submit {
+  width: 100%;
+  max-width: 150px;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #555;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .nav-link, .mini-navlink {
+    font-size: 18px;
+    padding: 8px;
+  }
+  
+  .text-overlay h1 {
+    font-size: 28px;
+  }
+  
+  .container {
+    padding-left: 20px;
+  }
+}
+
+/* Improved Footer2 Styling */
+.footer2 {
+  margin-top: 20px;
+  padding: 30px;
+  background-color: rgb(240, 73, 73);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.footer2 div {
+  margin-bottom: 10px;
+}
+
+.footer2 p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer2 .footer-contact {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .footer2 {
+    padding: 20px;
+  }
+
+  .footer2 p {
+    font-size: 14px;
+  }
+
+  .footer2 .footer-contact {
+    font-size: 16px;
+  }
+}

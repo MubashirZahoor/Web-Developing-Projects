@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Product Landing Page</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="header" class="header">
+        <img id="header-img"
+             src="https://img.freepik.com/free-vector/flat-design-bookstore-logo-template_23-2149325325.jpg?ga=GA1.1.1068984629.1728059994&semt=ais_hybrid"
+             alt="logo" class="logo" />
+        <nav id="nav-bar">
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#introduction">Introduction</a>
+            <a class="nav-link" href="#footer">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Mini Navbar Section -->
+    <nav class="mini-navbar" id="home">
+        <a class="mini-navlink" href="#Frictional">Fictional</a>
+        <a class="mini-navlink" href="#NonFictional">Non-Fictional</a>
+        <a class="mini-navlink" href="#Science">Science</a>
+        <a class="mini-navlink" href="#ChildrensBooks">Children's Books</a>
+    </nav>
+    <hr>
+
+    <!-- Background Section -->
+    <section>
+        <div class="container">
+            <div class="text-overlay">
+                <h3>George R Martin</h3>
+                <h1>Song of Ice and Fire Sequence</h1>
+                <a href="#" class="shop-button">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <div class="video-container">
+        <iframe id="video" src="https://www.youtube.com/embed/watch?v=TfZnasWBrM4" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- Footer Section with Form -->
+    <section id="footer">
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post" class="footer1">
+            <label for="feedback">Feedback:</label><br>
+            <input type="text" id="feedback" name="feedback" class="text"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" class="email" placeholder="Email here" required><br><br>
+            <input type="submit" id="submit" value="Submit" class="submit">    
+        </form>
+        <div class="footer2" id="introduction">
+            <div>
+                <p>We are online market based book sellers
+                <br>Our store is located in <strong>xyz.market</strong></p>
+            </div>
+            <div>Address:xyz.market.country</div>
+            <div>Email:+1234567890</div>
+        </div>
+        
+
+
+    </section>
+
+</body>
+</html>
